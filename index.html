@@ -211,8 +211,10 @@
                 .basketball-guide-2017-container header.guide-header .cover-story p.read-button span {
                     font-size: 1rem
                 }
+
+                 
             }
-            
+
             .basketball-guide-2017-container section.guide-section {
                 margin-bottom: 2rem
             }
@@ -244,18 +246,55 @@
                 flex-basis: 0;
                 min-width: 300px
             }
+
             
             @media screen and (max-width: 500px) {
                 .basketball-guide-2017-container .story-box {
                     min-width: calc(100% - 1rem)
                 }
+
+                            
             }
+
+
             
             .basketball-guide-2017-container .story-box img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center bottom;
+            }
+
+             .mobile-cover {
+                display: none;
+            }
+
+            @media screen and (max-width: 1100px) {
+                .guide-header {
+                    display: none;
+                }
+
+                .mobile-cover  {
+                    display: block;
+                }         
+            }
+
+            div.caption h4 {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                background-color: #eb6123;
+                padding: 0.25rem 0.5rem;
+                font-size: 1.5rem;
+                text-align: right;
+                max-width: 75%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                text-align: left;
+                display: none;
+                bottom: 0;
             }
             
             .basketball-guide-2017-container .story-box div.blurb {
@@ -328,8 +367,7 @@
                 background-color: #000;
                 text-align: center;
                 float: right;
-                padding: 32px 16px 32px 16px;
-                
+                padding: 16px 16px 32px 16px;
             }
 
             .overlay {
@@ -339,7 +377,7 @@
                 background: rgba(0, 0, 0, 0.5); /* Black see-through */
                 color: #f1f1f1; 
                 width: 100%;
-                height: 100%;
+                /*height: 100%;*/
                 transition: .5s ease;
                 opacity:0;
                 color: white;
@@ -347,98 +385,162 @@
                 text-align: center;
             }
 
-            .overlay:hover {
+
+            .blurb {
+                transition: .5s ease;
+            }
+
+            .story-box:hover .overlay {
                 opacity: 1;
             }
 
-            .hide-away {}
-
-            .overlay:hover .blurb {
+            .story-box:hover .blurb:not(:hover) {
                 opacity: 0;
             }
+
+            .cover-header {
+                display: block;
+            }
+
+           
+
+            
+            
 
         </style>
 
         <div class="guide-container basketball-guide-2017-container">
-            <h1 style="font-size: 60pt; font-family: FEAFS; color: #eb6123; background-color: #000;">Halloween Special</h1>
+            <h1 style="font-size: 60pt; font-family: FEAFS; color: #eb6123; background-color: #000;">THE HATCHET'S HALLOWEEN GUIDE</h1>
         </div>
 
         <div class="guide-container basketball-guide-2017-container">
 
             
             <header class="guide-header">
-                <a href="https://www.gwhatchet.com/?p=1070752">                    
+                <div class="cover-header">
+                    <a  href="https://www.gwhatchet.com/?p=1070752">                    
                     <div style="margin-bottom: 0.5rem; height: 450px; position: relative; z-index: 1;">
                         <div style="margin: 0.5rem 0.5rem;">
-                            <img style="position: absolute; z-index: 2;" src="https://www.gwhatchet.com/wp-content/uploads/2017/10/PUB-Dread_Courtesy-2000x1340.jpg" />
+                            <img style="position: absolute; z-index: 2;" src="https://www.gwhatchet.com/wp-content/uploads/2019/10/BeetleHouseInterior_MS.jpg" />
                         </div>
                         <div style="position: relative; z-index: 3;" class="modal">
                             <div class="cover-story">
-                                <h2 class="big-headline">Spookiest ways to have fun this month</h2>
-                                <p style="text-overflow: ellipsis;" class="big-excerpt">The men&#8217;s team enters the 2018-19 season coming off its worst record in five seasons and is trying to use new personnel to rebuild the program. The women&#8217;s</p>
-                                <p class="read-button"><span>Read the Cover Story</span></p>
+                                <h2 class="big-headline">The restaurant where Halloween never ends: Beetle House DC</h2>
+                                <p style="text-overflow: ellipsis;" class="big-excerpt">Halloween is the one day of the year to celebrate your spooky side, but there is one place in town where the holiday never ends: Beetle House DC.</p>
+                            
+                            <a href="https://www.gwhatchet.com/?p=1101692">
+                                <p class="read-button"><span>Read the Story</span></p>
+                            </a>
                             </div>
                         </div>
-                    </div>
-                    
-                    
+                    </div>                    
                 </a>
+                </div>
+                
             </header>
+
+
 
             <section class="guide-section">
                 <section class="row">
-                   <a class="story-box" href="https://www.gwhatchet.com/?p=1070693">
-                        <img src="https://www.gwhatchet.com/wp-content/uploads/2018/10/HalloweenPopUp_EL-2000x1340.jpg">
+
+
+                <div class="mobile-cover">
+                    <a class="story-box" href="https://www.gwhatchet.com/?p=1101692">
+                        <img src="https://www.gwhatchet.com/wp-content/uploads/2019/10/BeetleHouseInterior_MS.jpg">
                         <div class="blurb">
-                            <h4>Colonials lack clear option for go-to scorer</h4>
+                            <h4>The restaurant where Halloween never ends: Beetle House DC</h4>
                             <p class="description"></p>
                         </div>
-                        
-                        <div style="z-index: 1;" class="overlay">                            
-                            <div style="z-index: 2;" class="overlay">
-                            <div class="blurb" style="background: rgba(235, 97, 35, 0.5);" >
-                                <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">This is an exmwdlkawnda awdlkawd lkadwlakwjda alwkdjawljkd awdawkljlkawd lkjawdlakjda awdjklkjawd .,makdawldkjawd kljadslkawjda</p>
+
+                        <div style="z-index: 2;" class="overlay">
+                            <div class="caption" style="background: rgba(235, 97, 35, 0.5);" >
+                                <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">Halloween is the one day of the year to celebrate your spooky side, but there is one place in town where the holiday never ends: Beetle House DC.</p>
                                 <p class="description"></p>
                             </div>
                         </div>    
-                        </div>
-                        
                     </a>
-                    <a class="story-box" href="https://www.gwhatchet.com/?p=1070599">
-                        <img src="https://www.gwhatchet.com/wp-content/uploads/2018/10/PUB-Gwar-Dahlia-1000x670.jpg">
-                        <div class="blurb">
-                            <h4>Transfers look to change college career trajectory at GW</h4>
+                </div>
+                
+
+
+                   <a class="story-box" href="https://www.gwhatchet.com/?p=1101720">
+                    <img src="https://www.gwhatchet.com/wp-content/uploads/2019/10/PubGrimm_SW.jpg">
+                    <div class="blurb">
+                        <h4>Where to have a spooky-themed drink this Halloween</h4>
+                        <p class="description"></p>
+                    </div>
+
+                    <div style="z-index: 2;" class="overlay">
+                        <div class="caption" style="background: rgba(235, 97, 35, 0.5);" >
+                            <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">Visit one of these bars that have transformed for Halloween or popped up for the holiday throughout the District for a spooky cocktail.</p>
                             <p class="description"></p>
                         </div>
-                    </a>
-                    <a class="story-box" href="https://www.gwhatchet.com/?p=1070624">
-                        <img src="https://www.gwhatchet.com/wp-content/uploads/2017/10/Drinking_OA-2000x1340.jpg">
-                        <div class="blurb">
-                            <h4>Student groups discuss how to avoid cultural appropriation on Halloween</h4>
+                    </div>    
+                </a>
+                <a class="story-box" href="https://www.gwhatchet.com/?p=1101712">
+                    <img src="https://www.gwhatchet.com/wp-content/uploads/2019/10/HalloweenThrift_SW-1.jpg">
+                    <div class="blurb">
+                        <h4>Cut down on waste by thrifting your Halloween costume this year</h4>
+                        <p class="description"></p>
+                    </div>
+                    
+                    <div style="z-index: 2;" class="overlay">
+                        <div class="caption" style="background: rgba(235, 97, 35, 0.5);" >
+                            <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">Reduce your carbon footprint this Halloween by opting for a second hand rather than store-bought costume.</p>
                             <p class="description"></p>
                         </div>
-                    </a>
-                    <a class="story-box" href="https://www.gwhatchet.com/?p=1070567">
-                        <img src="https://www.gwhatchet.com/wp-content/uploads/2016/10/Halloween-Visualize.jpg">
-                        <div class="blurb">
-                            <h4>Rookies use athleticism to overcome inexperience</h4>
+                    </div>    
+                </a>
+                
+                <a class="story-box" href="https://www.gwhatchet.com/?p=1101622">
+                    <img src="https://www.gwhatchet.com/wp-content/uploads/2019/10/ExorcistSteps_IS.jpg">
+                    <div class="blurb">
+                        <h4>Priceless scares: Save cash on ghost tours at free haunted houses</h4>
+                        <p class="description"></p>
+                    </div>
+                    
+                    <div style="z-index: 2;" class="overlay">
+                        <div class="caption" style="background: rgba(235, 97, 35, 0.5);" >
+                            <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">Many of the guided ghost tours in the District can be pricey. Save some money by embarking on a self-guided ghost tour at these haunted happenings.</p>
                             <p class="description"></p>
                         </div>
-                    </a>
-                    <a class="story-box" href="https://www.gwhatchet.com/?p=1070568">
-                        <img src="https://www.gwhatchet.com/wp-content/uploads/2017/10/LOC_MD-2000x1340.jpg">
-                        <div class="blurb">
-                            <h4>Avoid Halloween hangovers with these science-based tips</h4>
+                    </div>    
+                </a>
+
+
+
+                <a class="story-box" href="https://www.gwhatchet.com/?p=1101625">
+                    <img src="https://www.gwhatchet.com/wp-content/uploads/2019/10/BakedandWired_IS.jpg">
+                    <div class="blurb">
+                        <h4>Hallo-week outlook &#8208; Carve pumpkins with Baked &amp; Wired</h4>
+                        <p class="description"></p>
+                    </div>
+                    
+                    <div style="z-index: 2;" class="overlay">
+                        <div class="caption" style="background: rgba(235, 97, 35, 0.5);" >
+                            <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">The end of October often means haunts and treats, but there are other ways to celebrate Halloween without spiking your heart rate.</p>
                             <p class="description"></p>
                         </div>
-                    </a>
-                    <a class="story-box" href="https://www.gwhatchet.com/?p=1070660">
-                        <img src="https://www.gwhatchet.com/wp-content/uploads/2017/10/CulturalAppropriation_KC-2000x1340.jpg">
-                        <div class="blurb">
-                            <h4>Weekend outlook – Behind the scenes of a classic Halloween film</h4>
+                    </div>    
+                </a>
+
+
+
+                <a class="story-box" href="https://www.gwhatchet.com/?p=1101760">
+                    <img src="https://www.gwhatchet.com/wp-content/uploads/2019/10/RockyHorror_SG.jpg">
+                    <div class="blurb">
+                        <h4>Rocky Horror Picture Show celebrates its 25th anniversary on campus</h4>
+                        <p class="description"></p>
+                    </div>
+                    
+                    <div style="z-index: 2;" class="overlay">
+                        <div class="caption" style="background: rgba(235, 97, 35, 0.5);" >
+                            <p style="padding: 30px; text-align: bottom; margin-top: auto; margin-bottom: auto;">GW Forbidden Planet Productions is celebrating its 25th Rocky Horror Picture Show this Hallo-weekend.</p>
                             <p class="description"></p>
                         </div>
-                    </a>
+                    </div>    
+                </a>
                 </section>
             </section>
 
